@@ -1,5 +1,8 @@
 import React from "react"
 
 export default function Home() {
-  return <div>This is a card.</div>
+  return <div>
+    <pre>Jason Ebueng</pre>
+    <pre>Rails / JavaScript Developer</pre>
+  </div> 
 }
