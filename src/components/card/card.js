@@ -35,6 +35,7 @@ const InnerLeftBox = styled.div`
   justify-content: center;
   align-items: flex-end;
   border-right: 2px solid rgba(0,0,0,0.6);
+  padding-right: 1em;
 `
 
 const NameDiv = styled.div`
@@ -61,6 +62,7 @@ const InnerRightBox = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding-left: 1em;
 `
 
 const StyledList = styled.ul`
