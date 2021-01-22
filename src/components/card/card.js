@@ -17,14 +17,15 @@ const Box = styled.div`
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
+  flex: 2 1 auto;
 `
 
 const Column = styled.div`
   // outline: 1px solid blue; 
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  // flex-basis: 100%;
+  // flex: 1;
 `
 // left column
 const InnerLeftBox = styled.div`
@@ -35,7 +36,8 @@ const InnerLeftBox = styled.div`
   justify-content: center;
   align-items: flex-end;
   border-right: 2px solid rgba(0,0,0,0.6);
-  padding-right: 1em;
+  padding-right: 0.5em;
+  width: 75%;
 `
 
 const NameDiv = styled.div`
@@ -46,6 +48,7 @@ const NameDiv = styled.div`
   background-clip: text;
   color: transparent;
   text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+  width: max-content;
 `
 
 const SubheaderDiv = styled.div`
@@ -62,7 +65,7 @@ const InnerRightBox = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding-left: 1em;
+  display: 100%
 `
 
 const StyledList = styled.ul`
@@ -76,24 +79,27 @@ const StyledList = styled.ul`
 `
 
 const StyledItem = styled.li`
-  font-size: 0.50em;
+  font-size: 0.60em;
 `
 
 const StyledIcon = styled.div`
-  font-size:1em;
+  font-size:1.5em;
   color: rgba(0,0,0,0.6);
+  display: inline;
 `
 
 const StyledLinkedInIcon = styled.div`
-  font-size:1em;
+  font-size:1.25em;
   border: 1px solid black;
   display: inline-block;
   border-radius: 5px;
   height: 1.20em;
-  width: 1.25em;
+  width: 1.5em;
   text-align: center;
-  color: white;
-  background-color: rgba(0,0,0,0.6);;
+  color: rgba(255,255,255,0.8);
+  background-color: rgba(0,0,0,0.6);
+  display: inline;
+  margin-right: 2px;
 `
 
 export default function Card(props) {
@@ -103,7 +109,7 @@ export default function Card(props) {
     <Box>
       <Column>
         <InnerLeftBox>
-          <NameDiv>Jason Ebueng </NameDiv> 
+          <NameDiv>jason ebueng</NameDiv> 
           <SubheaderDiv font={font}>Web Developer</SubheaderDiv>
         </InnerLeftBox>
       </Column>
@@ -112,8 +118,8 @@ export default function Card(props) {
           <StyledList>
             <StyledItem><StyledIcon>🏠</StyledIcon>Southern California</StyledItem>
             <StyledItem><StyledIcon>📧</StyledIcon>jason.ebueng[at]gmail.com</StyledItem>
-            <StyledItem><StyledIcon>🐈</StyledIcon>https://github.com/JasonEb</StyledItem>
-            <StyledItem><StyledLinkedInIcon>in</StyledLinkedInIcon>https://www.linkedin.com/in/jasonebueng/ </StyledItem>
+            <StyledItem><StyledIcon>🐈</StyledIcon>github.com/JasonEb</StyledItem>
+            <StyledItem><StyledIcon>📄</StyledIcon>linkedin.com/in/jasonebueng/ </StyledItem>
           </StyledList>
         </InnerRightBox>
       </Column>
