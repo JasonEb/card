@@ -24,17 +24,17 @@ const Box = styled.div`
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  flex: 2 1 auto;
+  flex: 1 2 auto;
 `
 
-const Column = styled.div`
+// left column
+const LeftColumn = styled.div`
   // outline: 1px solid blue; 
   display: flex;
   flex-direction: column;
-  // flex-basis: 100%;
-  // flex: 1;
+  margin-right: -1em;
 `
-// left column
+
 const InnerLeftBox = styled.div`
   // outline: 1px solid yellow; 
   height: 100%;
@@ -48,22 +48,29 @@ const InnerLeftBox = styled.div`
 `
 
 const NameDiv = styled.div`
-  background-color: #sr655f34;
+  background-color: darkcyan;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
   text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
   width: max-content;
+  font-size: 1.25em;
+  font-weight: bold;
 `
 
 const SubheaderDiv = styled.div`
-  font-size: 0.7em;
+  font-size: 0.8em;
+  width: max-content;
   font-family: ${props => props.font}
 `
 
 //right column
-
+const RightColumn = styled.div`
+  // outline: 1px solid blue; 
+  display: flex;
+  flex-direction: column;
+`
 const InnerRightBox = styled.div`
   // outline: 1px solid green; 
   height: 100%;
@@ -85,7 +92,7 @@ const StyledList = styled.ul`
 `
 
 const StyledItem = styled.li`
-  font-size: 0.70em;
+  font-size: 0.82em;
 `
 
 const StyledIcon = styled.div`
@@ -113,13 +120,13 @@ export default function Card(props) {
 
   return <Container font={font} style={{fontFamily: font}}>
     <Box>
-      <Column>
+      <LeftColumn>
         <InnerLeftBox>
           <NameDiv>jason ebueng</NameDiv> 
           <SubheaderDiv font={font}>Web Developer</SubheaderDiv>
         </InnerLeftBox>
-      </Column>
-      <Column>
+      </LeftColumn>
+      <RightColumn>
         <InnerRightBox>
           <StyledList>
             <StyledItem><StyledIcon>🏠 </StyledIcon>Southern California</StyledItem>
@@ -128,7 +135,7 @@ export default function Card(props) {
             <StyledItem><StyledIcon>📄 </StyledIcon>linkedin.com/in/jasonebueng/ </StyledItem>
           </StyledList>
         </InnerRightBox>
-      </Column>
+      </RightColumn>
     </Box>
 </Container>
 }

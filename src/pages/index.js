@@ -4,8 +4,8 @@ import Layout from '../components/layout'
 import Card from '../components/card/card'
 
 export default function Home() {
-  const fonts = ['Didot', 'Verdana', 'Helvetica', 'Tahoma', 'Georgia', 'Garamond', 'Courier New', 'Brush Script MT']
-
+  // const fonts = ['Didot', 'Verdana', 'Helvetica', 'Tahoma', 'Georgia', 'Garamond', 'Courier New', 'Brush Script MT']
+  const fonts = ['Garamond']
   const cards = fonts.map( (font) => {
       return <Card font={font} style={{fontFamily: font}} />
     }
