@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import LargeTriangles from '../../svgs/Large-Triangles.svg'
+// import LargeTriangles from '../../svgs/Large-Triangles.svg'
 
 const Container = styled.div`
   outline: 2px solid black;

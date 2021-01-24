@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly 1`] = `
+<div
+  className="sc-bdfBwQ fJfIjm"
+  style={
+    Object {
+      "fontFamily": undefined,
+    }
+  }
+>
+  <div
+    className="sc-gsTCUz czNAIZ"
+  >
+    <div
+      className="sc-dlfnbm frclaY"
+    >
+      <div
+        className="sc-hKgILt fLFlvy"
+      >
+        <div
+          className="sc-eCssSg hugDgv"
+        >
+          jason ebueng
+        </div>
+        <div
+          className="sc-jSgupP fhWkTJ"
+        >
+          Web Developer
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-gKsewC ioLATl"
+    >
+      <div
+        className="sc-iBPRYJ hCAMas"
+      >
+        <ul
+          className="sc-fubCfw hwrzrL"
+        >
+          <li
+            className="sc-pFZIQ dFaSce"
+          >
+            <div
+              className="sc-jrAGrp eqbWjJ"
+            >
+              🏠 
+            </div>
+            Southern California
+          </li>
+          <li
+            className="sc-pFZIQ dFaSce"
+          >
+            <div
+              className="sc-jrAGrp eqbWjJ"
+            >
+              📧 
+            </div>
+            jason.ebueng[at]gmail.com
+          </li>
+          <li
+            className="sc-pFZIQ dFaSce"
+          >
+            <div
+              className="sc-jrAGrp eqbWjJ"
+            >
+              🐈 
+            </div>
+            github.com/JasonEb
+          </li>
+          <li
+            className="sc-pFZIQ dFaSce"
+          >
+            <div
+              className="sc-jrAGrp eqbWjJ"
+            >
+              📄 
+            </div>
+            linkedin.com/in/jasonebueng/ 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
