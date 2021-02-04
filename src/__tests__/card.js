@@ -2,18 +2,18 @@ import React from "react"
 import { render, screen } from "@testing-library/react"
 import renderer from "react-test-renderer"
 
-import Card from "../components/card/card"
+import LandscapeCard from "../components/card/landscapeCard"
 
-describe("Card", () => {
+describe("LandScape Card", () => {
   it("renders correctly", () => {
     const tree = renderer
-      .create(<Card />)
+      .create(<LandscapeCard />)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   beforeEach( () => {
-    return render(<Card />)  
+    return render(<LandscapeCard />)  
   })
 
   it("it should have my Name", () => {

@@ -2,10 +2,12 @@ import React, {useEffect, useState } from "react"
 import styled from "styled-components"
 import Layout from '../components/layout'
 import LandscapeCard from '../components/card/card'
-import Container from '../components/Container'
 
 export default function Home() {
-  const font = ['Garamond']
+  const [font, setFont] = useState('Garamond')
+
+  let isLandscape = useMediaQuery('screen and (orientation: landscape)')
+  console.log("Landscape: ", isLandscape)
 
   return <Layout>
     <LandscapeCard font={font} style={{fontFamily: font}} />
@@ -17,8 +19,8 @@ export function useMediaQuery(query) {
   const [matches, setMatches] = useState(false);
 
   useEffect(() => {
-    debugger
     const media = window.matchMedia(query);
+
     if (media.matches !== matches) {
       setMatches(media.matches);
     }
