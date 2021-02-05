@@ -1,20 +1,23 @@
 import React, {useEffect, useState } from "react"
 import styled from "styled-components"
 import Layout from '../components/layout'
-import LandscapeCard from '../components/card/card'
+import LandscapeCard from '../components/card/landscapeCard'
+import PortraitCard from '../components/card/portraitCard'
 
 export default function Home() {
   const [font, setFont] = useState('Garamond')
 
   let isLandscape = useMediaQuery('screen and (orientation: landscape)')
+
   console.log("Landscape: ", isLandscape)
 
   return <Layout>
-    <LandscapeCard font={font} style={{fontFamily: font}} />
+    {/* <LandscapeCard font={font} style={{fontFamily: font}} /> */}
+    <PortraitCard font={font} style={{fontFamily: font}} />
   </Layout> 
 }
 
-//custom Hook
+//custom hook for detecting device and orientation
 export function useMediaQuery(query) {
   const [matches, setMatches] = useState(false);
 
