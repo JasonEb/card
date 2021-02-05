@@ -11,9 +11,10 @@ export default function Home() {
 
   console.log("Landscape: ", isLandscape)
 
+  let card = isLandscape ? <LandscapeCard font={font} style={{fontFamily: font}} /> : <PortraitCard font={font} style={{fontFamily: font}} />
+
   return <Layout>
-    {/* <LandscapeCard font={font} style={{fontFamily: font}} /> */}
-    <PortraitCard font={font} style={{fontFamily: font}} />
+    {card}
   </Layout> 
 }
 
@@ -30,6 +31,8 @@ export function useMediaQuery(query) {
     const listener = () => {
       setMatches(media.matches);
     };
+
+    //ToDo: update addListener, it is deprecated
     media.addListener(listener);
     return () => media.removeListener(listener);
   }, [matches, query]);
