@@ -18,13 +18,13 @@ const Container = styled.div`
 `
 
 const Box = styled.div`
-  outline: 1px solid red dashed; 
+  // outline: 1px solid pink; 
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  flex: 1 2 auto;
+  justify-content: space-evenly;
 `
 
 //Top Area
@@ -33,6 +33,9 @@ const TopRow = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 1em;
+  align-items: center;
+  border-bottom: 2px solid rgba(0,0,0,0.6);
+  max-width: -webkit-fill-available;
 `
 
 const InnerTopBox = styled.div`
@@ -42,8 +45,6 @@ const InnerTopBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid rgba(0,0,0,0.6);
-  padding-right: 0.5em;
 `
 
 const NameDiv = styled.div`
@@ -69,6 +70,7 @@ const BottomRow = styled.div`
   // outline: 1px solid blue; 
   display: flex;
   flex-direction: column;
+  max-width: -webkit-fill-available;
 `
 const InnerBottomBox = styled.div`
   // outline: 1px solid green; 
@@ -78,6 +80,7 @@ const InnerBottomBox = styled.div`
   justify-content: space-evenly;
   align-items: flex-start;
   display: 100%
+  height: 85%;
 `
 
 const StyledList = styled.ul`
