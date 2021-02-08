@@ -1,4 +1,4 @@
-# Gatsby Business Card
+# Gatsby Business Card [![Build Status](https://travis-ci.com/JasonEb/card.svg?branch=main)](https://travis-ci.com/JasonEb/card)
 
 A simple Gatsby project supplemented by testing, continuous deployment, and documentation. 
 
