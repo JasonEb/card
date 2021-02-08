@@ -36,8 +36,8 @@ describe("LandScape Card", () => {
     expect(email).toBeTruthy()
   })
 
-  test("it should have my blog", () => {
-    const blog = screen.getByText('https://jasoneb.github.io/blog')
-    expect(blog).toBeTruthy()
-  })
+  // test("it should have my blog", () => {
+  //   const blog = screen.getByText('https://jasoneb.github.io/blog')
+  //   expect(blog).toBeTruthy()
+  // })
 })
