@@ -7,4 +7,5 @@ Deployed [here](https://jasoneb.github.io/card/)
 ## Features
 - Responsive layout with React's custom hooks and styled-components. 
     - Conditionally changes layout depending on orientation
-    - Only renders specific card and related css
+    - Only renders specific card and related css\
+    - Continuously Deployed with Jest, Travis, and Github Pages
