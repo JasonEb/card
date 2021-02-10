@@ -13,8 +13,7 @@ const SEO = ({ title, description, image, article }) => {
     titleTemplate,
     defaultDescription,
     siteUrl,
-    defaultImage,
-    twitterUsername,
+    defaultImage
   } = site.siteMetadata
 
   const seo = {
@@ -40,6 +39,8 @@ const SEO = ({ title, description, image, article }) => {
   )
 }
 
+export default SEO
+
 const query = graphql`
   query SEO {
     site {
@@ -53,31 +54,6 @@ const query = graphql`
     }
   }
 `
-
-export const useSiteMetadata = () => {
-  const { site } = useStaticQuery(
-    graphql`
-      query SiteMetaData {
-        site {
-          siteMetadata {
-            title
-            siteUrl
-            headline
-            description
-            image
-            video
-            twitter
-            name
-            logo
-          }
-        }
-      }
-    `
-  )
-  return site.siteMetadata
-}
-
-export default SEO
 
 SEO.propTypes = {
   title: PropTypes.string,

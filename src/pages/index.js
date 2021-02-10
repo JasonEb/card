@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Layout from '../components/layout'
 import LandscapeCard from '../components/card/landscapeCard'
 import PortraitCard from '../components/card/portraitCard'
+import SEO from '../components/seo'
 
 export default function Home() {
   const [font, setFont] = useState('Garamond')
@@ -14,6 +15,7 @@ export default function Home() {
   let card = isLandscape ? <LandscapeCard font={font} style={{fontFamily: font}} /> : <PortraitCard font={font} style={{fontFamily: font}} />
 
   return <Layout>
+    <SEO />
     {card}
   </Layout> 
 }
