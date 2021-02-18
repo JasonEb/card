@@ -5,11 +5,9 @@ import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({ title, description, image, article }) => {
-  const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
   const {
-    defaultTitle,
     titleTemplate,
     defaultDescription,
     siteUrl,
@@ -17,10 +15,10 @@ const SEO = ({ title, description, image, article }) => {
   } = site.siteMetadata
 
   const seo = {
-    title: title || defaultTitle,
+    title: title,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
+    url: `${siteUrl}`,
   }
 
   return (
