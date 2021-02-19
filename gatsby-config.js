@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: "Gatsby Business Card",
     titleTemplate: "%s",
-    description: "Software Developer",
+    description: "A business card built with React.js and the Gatsby framework",
     url: "http://jasoneb.github.io/card", // No trailing slash allowed!
     image: "/images/je.jpg", // Path to your image you placed in the 'static' folder
   },

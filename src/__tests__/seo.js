@@ -22,10 +22,15 @@ describe('SEO component', () =>  {
 
     test('should render correct meta data for home page', () => {
         const mockTitle = "Gatsby Business Card"
+        const mockDescription =  "A business card built with React.js and the Gatsby framework"
+        const mockUrl = "http://jasoneb.github.io/card"
 
-        render(<SEO title={"Gatsby Business Card"}></SEO>)
-        const { title } = Helmet.peek()
-
+        render(<SEO ></SEO>)
+        const { title, description, url } = Helmet.peek()
+        debugger
+        
         expect(title).toBe(mockTitle)
+        expect(description).toBe(mockDescription)
+        expect(url).toBe(mockUrl)
     })
 })
