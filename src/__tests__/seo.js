@@ -12,7 +12,7 @@ describe('SEO component', () =>  {
                 siteMetadata: {
                     title: "Gatsby Business Card",
                     titleTemplate: "%s",
-                    description: "Software Developer",
+                    description: "A business card built with React.js and the Gatsby framework",
                     url: "http://jasoneb.github.io/card", // No trailing slash allowed!
                     image: "/images/je.jpg", // Path to your image you placed in the 'static' folder
                 }
@@ -26,11 +26,19 @@ describe('SEO component', () =>  {
         const mockUrl = "http://jasoneb.github.io/card"
 
         render(<SEO ></SEO>)
-        const { title, description, url } = Helmet.peek()
-        debugger
+        const helmet = Helmet.peek()
+        const {title, metaTags} = helmet
         
         expect(title).toBe(mockTitle)
-        expect(description).toBe(mockDescription)
-        expect(url).toBe(mockUrl)
+
+        expect(metaTags).toEqual(
+            expect.arrayContaining([
+                { name: "og:description", content: mockDescription },
+                { name: "description", content: mockDescription },
+                { name: "image", content: "/images/je.jpg" },
+                { property: "og:url", content: mockUrl },
+                { property: "og:title", content: "Gatsby Business Card" },
+                { property: "og:image", content: "/images/je.jpg" }
+        ]))
     })
 })
