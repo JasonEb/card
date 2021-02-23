@@ -85,3 +85,89 @@ exports[`LandScape Card renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`Portrait Card renders correctly 1`] = `
+<div
+  className="sc-iqHYGH bdDVqs"
+  style={
+    Object {
+      "fontFamily": undefined,
+    }
+  }
+>
+  <div
+    className="sc-crrsfI cRhzbn"
+  >
+    <div
+      className="sc-dQppl hLAGbO"
+    >
+      <div
+        className="sc-bqyKva eUUXVL"
+      >
+        <div
+          className="sc-kstrdz dUHmp"
+        >
+          jason ebueng
+        </div>
+        <div
+          className="sc-hBEYos dNjcgo"
+        >
+          Web Developer
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-fodVxV hOaNRr"
+    >
+      <div
+        className="sc-fFubgz eglwPk"
+      >
+        <ul
+          className="sc-bkzZxe jpSbRY"
+        >
+          <div
+            className="sc-dIUggk emvDIR"
+          >
+            🏠 
+          </div>
+          <li
+            className="sc-idOhPF htRQLt"
+          >
+            Southern California
+          </li>
+          <div
+            className="sc-dIUggk emvDIR"
+          >
+            📧 
+          </div>
+          <li
+            className="sc-idOhPF htRQLt"
+          >
+            jason.ebueng[at]gmail.com
+          </li>
+          <div
+            className="sc-dIUggk emvDIR"
+          >
+            🐈 
+          </div>
+          <li
+            className="sc-idOhPF htRQLt"
+          >
+            github.com/JasonEb
+          </li>
+          <div
+            className="sc-dIUggk emvDIR"
+          >
+            📄 
+          </div>
+          <li
+            className="sc-idOhPF htRQLt"
+          >
+            linkedin.com/in/jasonebueng/ 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
