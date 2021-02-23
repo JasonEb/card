@@ -4,6 +4,7 @@ import renderer from "react-test-renderer"
 
 import LandscapeCard from "../components/card/landscapeCard"
 import PortraitCard from "../components/card/portraitCard"
+import CardContainer from '../components/card/cardContainer'
 
 describe("LandScape Card", () => {
   it("renders correctly", () => {
@@ -79,4 +80,26 @@ describe("Portrait Card", () => {
   //   const blog = screen.getByText('https://jasoneb.github.io/blog')
   //   expect(blog).toBeTruthy()
   // })
+})
+
+describe("Card Container", () => {
+  it("renders landscape correctly", () => {
+    const tree = renderer
+    .create(<CardContainer isLandscape={true} />)
+    .toJSON()
+    expect(tree).toMatchSnapshot()
+
+    const {className} = tree.props
+    expect(className.includes("landscape-card")).toBe(true)
+  })
+
+  it("renders portrait correctly", () => {
+    const tree = renderer
+    .create(<CardContainer isLandscape={false} />)
+    .toJSON()
+    expect(tree).toMatchSnapshot()
+
+    const {className} = tree.props
+    expect(className.includes("portrait-card")).toBe(true)
+  })
 })

@@ -1,8 +1,180 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Card Container renders landscape correctly 1`] = `
+<div
+  className="sc-bdfBwQ fJfIjm landscape-card"
+  style={
+    Object {
+      "fontFamily": "Garamond",
+    }
+  }
+>
+  <div
+    className="sc-gsTCUz czNAIZ"
+  >
+    <div
+      className="sc-dlfnbm frclaY"
+    >
+      <div
+        className="sc-hKgILt fLFlvy"
+      >
+        <div
+          className="sc-eCssSg hugDgv"
+        >
+          jason ebueng
+        </div>
+        <div
+          className="sc-jSgupP bgCTZo"
+        >
+          Web Developer
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-gKsewC ioLATl"
+    >
+      <div
+        className="sc-iBPRYJ hCAMas"
+      >
+        <ul
+          className="sc-fubCfw hwrzrL"
+        >
+          <li
+            className="sc-pFZIQ dFaSce"
+          >
+            <div
+              className="sc-jrAGrp eqbWjJ"
+            >
+              🏠 
+            </div>
+            Southern California
+          </li>
+          <li
+            className="sc-pFZIQ dFaSce"
+          >
+            <div
+              className="sc-jrAGrp eqbWjJ"
+            >
+              📧 
+            </div>
+            jason.ebueng[at]gmail.com
+          </li>
+          <li
+            className="sc-pFZIQ dFaSce"
+          >
+            <div
+              className="sc-jrAGrp eqbWjJ"
+            >
+              🐈 
+            </div>
+            github.com/JasonEb
+          </li>
+          <li
+            className="sc-pFZIQ dFaSce"
+          >
+            <div
+              className="sc-jrAGrp eqbWjJ"
+            >
+              📄 
+            </div>
+            linkedin.com/in/jasonebueng/ 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Card Container renders portrait correctly 1`] = `
+<div
+  className="sc-iqHYGH bdDVqs portrait-card"
+  style={
+    Object {
+      "fontFamily": "Garamond",
+    }
+  }
+>
+  <div
+    className="sc-crrsfI cRhzbn"
+  >
+    <div
+      className="sc-dQppl hLAGbO"
+    >
+      <div
+        className="sc-bqyKva eUUXVL"
+      >
+        <div
+          className="sc-kstrdz dUHmp"
+        >
+          jason ebueng
+        </div>
+        <div
+          className="sc-hBEYos eSNFkd"
+        >
+          Web Developer
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-fodVxV hOaNRr"
+    >
+      <div
+        className="sc-fFubgz eglwPk"
+      >
+        <ul
+          className="sc-bkzZxe jpSbRY"
+        >
+          <div
+            className="sc-dIUggk emvDIR"
+          >
+            🏠 
+          </div>
+          <li
+            className="sc-idOhPF htRQLt"
+          >
+            Southern California
+          </li>
+          <div
+            className="sc-dIUggk emvDIR"
+          >
+            📧 
+          </div>
+          <li
+            className="sc-idOhPF htRQLt"
+          >
+            jason.ebueng[at]gmail.com
+          </li>
+          <div
+            className="sc-dIUggk emvDIR"
+          >
+            🐈 
+          </div>
+          <li
+            className="sc-idOhPF htRQLt"
+          >
+            github.com/JasonEb
+          </li>
+          <div
+            className="sc-dIUggk emvDIR"
+          >
+            📄 
+          </div>
+          <li
+            className="sc-idOhPF htRQLt"
+          >
+            linkedin.com/in/jasonebueng/ 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`LandScape Card renders correctly 1`] = `
 <div
-  className="sc-bdfBwQ fJfIjm"
+  className="sc-bdfBwQ fJfIjm landscape-card"
   style={
     Object {
       "fontFamily": undefined,
@@ -88,7 +260,7 @@ exports[`LandScape Card renders correctly 1`] = `
 
 exports[`Portrait Card renders correctly 1`] = `
 <div
-  className="sc-iqHYGH bdDVqs"
+  className="sc-iqHYGH bdDVqs portrait-card"
   style={
     Object {
       "fontFamily": undefined,

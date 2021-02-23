@@ -120,7 +120,7 @@ const StyledLinkedInIcon = styled.div`
 export default function Card(props) {
     let {font} = props
 
-  return <Container font={font} style={{fontFamily: font}}>
+  return <Container className='portrait-card' font={font} style={{fontFamily: font}}>
     <Box>
       <TopRow>
         <InnerTopBox>

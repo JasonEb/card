@@ -118,7 +118,7 @@ const StyledLinkedInIcon = styled.div`
 export default function LandscapeCard(props) {
     let {font} = props
 
-  return <Container font={font} style={{fontFamily: font}}>
+  return <Container className="landscape-card" font={font} style={{fontFamily: font}}>
     <Box>
       <LeftColumn>
         <InnerLeftBox>
