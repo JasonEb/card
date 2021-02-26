@@ -129,10 +129,18 @@ export default function LandscapeCard(props) {
       <RightColumn>
         <InnerRightBox>
           <StyledList>
-            <StyledItem><StyledIcon>🏠 </StyledIcon>Southern California</StyledItem>
-            <StyledItem><StyledIcon>📧 </StyledIcon>jason.ebueng[at]gmail.com</StyledItem>
-            <StyledItem><StyledIcon>🐈 </StyledIcon>github.com/JasonEb</StyledItem>
-            <StyledItem><StyledIcon>📄 </StyledIcon>linkedin.com/in/jasonebueng/ </StyledItem>
+            <StyledItem>
+              <StyledIcon><span role="img" aria-label="home">🏠</span></StyledIcon>Southern California
+            </StyledItem>
+            <StyledItem>
+              <StyledIcon><span role="img" aria-label="email">📧</span></StyledIcon>jason.ebueng[at]gmail.com
+            </StyledItem>
+              <StyledItem>
+                <StyledIcon><span role="img" aria-label="github">🐈</span></StyledIcon>github.com/JasonEb
+            </StyledItem>
+              <StyledItem>
+                <StyledIcon><span role="img" aria-label="linkedin">📄</span></StyledIcon>linkedin.com/in/jasonebueng/ 
+            </StyledItem>
           </StyledList>
         </InnerRightBox>
       </RightColumn>
