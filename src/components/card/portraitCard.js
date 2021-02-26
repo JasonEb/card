@@ -131,13 +131,13 @@ export default function Card(props) {
       <BottomRow>
         <InnerBottomBox>
           <StyledList>
-            <StyledIcon>🏠 </StyledIcon>
+            <StyledIcon><span role="img" aria-label="home">🏠</span></StyledIcon>
             <StyledItem>Southern California</StyledItem>
-            <StyledIcon>📧 </StyledIcon>
+            <StyledIcon><span role="img" aria-label="email">📧</span></StyledIcon>
             <StyledItem>jason.ebueng[at]gmail.com</StyledItem>
-            <StyledIcon>🐈 </StyledIcon>
+            <StyledIcon><span role="img" aria-label="github">🐈</span></StyledIcon>
             <StyledItem>github.com/JasonEb</StyledItem>
-            <StyledIcon>📄 </StyledIcon>
+            <StyledIcon><span role="img" aria-label="linkedin">📄</span></StyledIcon>
             <StyledItem>linkedin.com/in/jasonebueng/ </StyledItem>
           </StyledList>
         </InnerBottomBox>
